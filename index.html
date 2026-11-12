@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tactile Baseline Comparison</title>
+  <title>Tactile Map Evaluation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,6 +15,7 @@
       min-height: 100vh;
       margin: 0;
     }
+
     main {
       max-width: 550px;
       margin: 20px;
@@ -24,31 +25,82 @@
       box-shadow: 0 8px 30px #00000010;
       text-align: center;
     }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #1e293b;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #475569;
+      font-size: 16px;
+    }
+
     a.button {
       display: inline-block;
-      padding: 14px 28px;
+      margin-top: 20px;
+      padding: 14px 30px;
       background: #2563eb;
       color: white;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
+      transition: background 0.2s;
     }
-    p { line-height: 1.6; }
+
+    a.button:hover {
+      background: #1d4ed8;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #64748b;
+      margin-top: 22px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 28px 22px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
-    <h1></h1>
+    <h1>Welcome to the Tactile Map Evaluation!</h1>
+
     <p>
-     
+      Thank you for participating in our research study.
     </p>
+
     <p>
-      
+      In this evaluation, you will assess generated tactile maps
+      based on their geographic accuracy, line quality, and
+      suitability for tactile graphic production.
     </p>
+
+    <p>
+      The evaluation consists of three experiments.
+      You can choose which experiment to complete and
+      save your progress to continue later.
+    </p>
+
     <a class="button"
        href="https://fe37ca0a096b794463.gradio.live">
-       Start Evaluation
+      Start Evaluation
     </a>
+
+    <p class="note">
+      Please read the instructions provided at the beginning
+      of each experiment before starting.
+    </p>
   </main>
 </body>
 </html>
